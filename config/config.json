@@ -1,0 +1,36 @@
+{
+  "SystemName": "Windows Workstation / Local Server",
+  "Thresholds": {
+    "CpuWarningPercent": 75,
+    "CpuCriticalPercent": 90,
+    "MemoryWarningPercent": 80,
+    "MemoryCriticalPercent": 90,
+    "DiskWarningFreePercent": 15,
+    "DiskCriticalFreePercent": 10
+  },
+  "MonitoredServices": [
+    "Spooler",
+    "wuauserv",
+    "EventLog",
+    "Dhcp",
+    "Dnscache",
+    "LanmanServer",
+    "WinDefend"
+  ],
+  "Automation": {
+    "EnableAutoRestartStoppedServices": true,
+    "MaxRestartAttempts": 1
+  },
+  "EventLog": {
+    "ScanHours": 24,
+    "MaxEvents": 10,
+    "IncludeLevels": [1, 2]
+  },
+  "Reporting": {
+    "ReportOutputDir": "./reports",
+    "GenerateHtml": true,
+    "GenerateCsv": true,
+    "GenerateJson": true,
+    "OpenReportAfterExecution": true
+  }
+}
