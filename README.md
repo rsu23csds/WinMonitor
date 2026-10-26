@@ -90,8 +90,3 @@ powershell -ExecutionPolicy Bypass -File .\Monitor-Infrastructure.ps1 -OpenRepor
 
 ---
 
-## 📜 License & Author
-
-- **Author**: Candidate for Associate Systems Administrator
-- **Target Organization**: Thermo Fisher Scientific
-- **License**: MIT License
